@@ -1,0 +1,16 @@
+{
+  "name": "fantasy_team_prediction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd Back_End && nodemon index.js",
+    "client": "cd Front_End && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
