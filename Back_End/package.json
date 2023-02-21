@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "dev": "npm run server" 
+    "dev": "npm run server"
   },
   "author": "Pragati Bisen",
   "license": "ISC",
@@ -15,6 +15,7 @@
     "bootstrap": "^5.2.3",
     "concurrent": "^0.3.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.0",
