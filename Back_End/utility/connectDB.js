@@ -1,8 +1,22 @@
 const mongoose = require('mongoose');
 
 
-mongoose.set('strictQuery', false);
-mongoose.connect('mongodb://127.0.0.1:27017/cricketDB');
+mongoose.set('strictQuery', true);
+const uri = process.env.MONGODB_URI;
+
+const  options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  ssl: true,
+  authSource: 'admin',
+  user: 'pragatibisen2001',
+  pass: process.env.pass,
+}
+
+mongoose.connect(uri, options)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error(err));
+
 conn = mongoose.connection;
 
 
